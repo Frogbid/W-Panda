@@ -22,6 +22,13 @@
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <style>
+    @font-face {
+        font-family: TESLA;
+        src: url(assets/fonts/TESLA/Kidsco.otf);
+    }
+    * {
+        font-family: TESLA !important;
+    }
 
     .caption {
         font-size: 10px;
@@ -73,7 +80,7 @@
         margin-bottom: 32px;
         position: relative;
         left: 0px;
-        background: white;
+        background: #ffa904;
         filter: drop-shadow(7px 9px 5px rgba(0, 0, 0, 0.04));
         -webkit-filter: drop-shadow(7px 9px 5px rgba(0, 0, 0, 0.04));
         -moz-filter: drop-shadow(7px 9px 5px rgba(0, 0, 0, 0.04));
@@ -136,6 +143,52 @@
             transform: translatey(0);
         }
     }
+    section#Charity {
+        padding: 6rem 0;
+        background-color: #fdd302;
+    }
+
+    #background{
+        max-width: 70%;
+        background: #ffa800;
+        padding: 20px;
+    }
+
+    @media screen and (max-width: 480px) {
+        #background{
+            max-width: 100%;
+        }
+    }
+    .section-title {
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+    .counter {
+        display: flex;
+        justify-content: center;
+    }
+    .counter li {
+        list-style: none;
+        width: 6rem;
+        background: #fff;
+        margin: 0 0.5rem;
+        padding: 1rem 0;
+        border: 1px solid #d0d6d7;
+        text-align: center;
+        font-size: 2.8rem;
+        font-weight: 700;
+        border-radius: 1rem;
+    }
+    .charity-price {
+        text-align: center;
+        padding: 3rem 0;
+    }
+    .charity-buttons {
+        text-align: center;
+    }
+    .charity-buttons {
+        text-align: center;
+    }
 </style>
 </head>
 <body>
@@ -185,6 +238,12 @@
     </nav>
 </section>
 
+
+
+
+
+
+
 <section data-bs-version="5.1" class="countdown3 cid-sZdxKIDTOn mbr-fullscreen mbr-parallax-background"
          id="countdown3-1g">
 
@@ -194,11 +253,51 @@
                 <h3 class="mbr-section-title mb-5 align-center mbr-fonts-style display-2"><strong>Lost Panda</strong><br/>
                     First Charity focused <span class="text-white">P2E GAME!</span></h3>
 
-                <div class="mbr-section-btn align-center mt-5"><a class="btn btn-primary display-4" href="#">MINT</a></div>
+                <div class="mbr-section-btn align-center mt-5"><a class="btn btn-primary display-4" href="#background">MINT</a></div>
             </div>
         </div>
     </div>
 </section>
+
+
+
+<section id="Charity">
+    <div class="container" id="background">
+        <div class="section-title">
+            <h2 style="font-size: 50px">The Lost Panda Charity Game</h2>
+            <h6 style="font-size: 25px;">
+                The LOST PANDA NFT Holders are official Investors for our
+                Exclusive NFT Game
+            </h6>
+        </div>
+        <div class="counter">
+            <li>-</li>
+            <li class="number">10</li>
+            <li>+</li>
+        </div>
+        <div class="charity-price">
+            <h4 style="font-size: 30px"><span>Price: </span>0.5 ETH + Gas Fee</h4>
+            <h4 style="font-size: 30px"><span>Minted:</span> 0 / 2383</h4>
+            <h4 style="font-size: 30px">Max 5 Per Transaction</h4>
+        </div>
+        <div class="charity-buttons">
+            <a href="#" style="font-size: 20px">Connect Wallet</a>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <section data-bs-version="5.1" class="image2 cid-sNPIWuRegg" id="image2-l">
 
@@ -208,12 +307,11 @@
             <div class="col-12 col-lg-4">
                 <div class="image-wrapper">
                     <img src="assets/images/rough-modified-1.png" alt="">
-                    <p class="mbr-description mbr-fonts-style mt-2 align-center display-7"><em><br></em><em>Who we are!</em></p>
                 </div>
             </div>
             <div class="col-12 col-lg">
                 <div class="text-wrapper">
-                    <h3 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong><u style="">Who we are!</u><br></strong><br></h3>
+                    <h3 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong><u style="font-size: 50px">Who we are!</u><br></strong><br></h3>
                     <h5 class="mbr-text mbr-fonts-style display-5">
                         LostPanda gives a chance to help donating without the donation coming directly from your
                         pockets. How? Introducing the first Charity based P2E game where holders can choose to
@@ -379,7 +477,7 @@
                     </div>
                     <div class="content-wrap">
                         <h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-5">
-                            <strong><a href="https://twitter.com/ShroomerOG" class="text-secondary" target="_blank">Blockchain expert</a></strong>
+                            <strong><a href="#" class="text-secondary" target="_blank">Blockchain expert</a></strong>
                         </h5>
                         <h6 class="mbr-role mbr-fonts-style align-center mb-3 display-4 text-white">
                             <strong>Expert in blockchain technology with past experiences working for
@@ -388,18 +486,18 @@
                         </h6>
                         <div class="social-row display-7">
                             <div class="soc-item">
-                                <a href="https://www.artstation.com/shroomer/" target="_blank">
+                                <a href="#" target="_blank">
                                     <span class="mbr-iconfont socicon-artstation socicon"
                                           style="font-size: 20px;"></span>
                                 </a>
                             </div>
                             <div class="soc-item">
-                                <a href="https://twitter.com/ShroomerOG" target="_blank">
+                                <a href="#" target="_blank">
                                     <span class="mbr-iconfont socicon-twitter socicon" style="font-size: 20px;"></span>
                                 </a>
                             </div>
                             <div class="soc-item">
-                                <a href="https://www.instagram.com/shroomer_og/" target="_blank">
+                                <a href="#" target="_blank">
                                     <span class="mbr-iconfont socicon-instagram socicon"
                                           style="font-size: 20px;"></span>
                                 </a>
@@ -428,7 +526,7 @@
                         <div class="social-row display-7">
 
                             <div class="soc-item">
-                                <a href="https://twitter.com/Festral0" target="_blank">
+                                <a href="#" target="_blank">
                                     <span class="mbr-iconfont socicon-twitter socicon" style="font-size: 20px;"></span>
                                 </a>
                             </div>
@@ -446,7 +544,7 @@
                     </div>
                     <div class="content-wrap">
                         <h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-5">
-                            <strong><a href="https://twitter.com/ShroomerOG" class="text-secondary" target="_blank">NFT Enthusiast & game creator</a></strong>
+                            <strong><a href="#" class="text-secondary" target="_blank">NFT Enthusiast & game creator</a></strong>
                         </h5>
                         <h6 class="mbr-role mbr-fonts-style align-center mb-3 display-4 text-white">
                             <strong>NFT advisor & expert. Past experience of working in gaming industry
@@ -454,13 +552,13 @@
                         </h6>
                         <div class="social-row display-7">
                             <div class="soc-item">
-                                <a href="https://www.artstation.com/miserable-orange" target="_blank">
+                                <a href="#" target="_blank">
                                     <span class="mbr-iconfont socicon-artstation socicon"
                                           style="font-size: 20px;"></span>
                                 </a>
                             </div>
                             <div class="soc-item">
-                                <a href="https://twitter.com/MiserableOrange" target="_blank">
+                                <a href="#" target="_blank">
                                     <span class="mbr-iconfont socicon-twitter socicon" style="font-size: 20px;"></span>
                                 </a>
                             </div>
@@ -478,7 +576,7 @@
                     </div>
                     <div class="content-wrap">
                         <h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-5">
-                            <strong><a href="https://twitter.com/ShroomerOG" class="text-secondary" target="_blank">Founder</a></strong>
+                            <strong><a href="#" class="text-secondary" target="_blank">Founder</a></strong>
                         </h5>
                         <h6 class="mbr-role mbr-fonts-style align-center mb-3 display-4 text-white">
                             <strong>Firm believer of bringing NFTs to life & make the real change moving forward
@@ -486,7 +584,7 @@
                         </h6>
                         <div class="social-row display-7">
                             <div class="soc-item">
-                                <a href="https://twitter.com/ProfitsPluto" target="_blank">
+                                <a href="#" target="_blank">
                                     <span class="mbr-iconfont socicon-twitter socicon" style="font-size: 20px;"></span>
                                 </a>
 
@@ -573,19 +671,19 @@
 
 
                     <div class="soc-item">
-                        <a href="https://discord.com/invite/TrollzSpaceClub" target="_blank">
+                        <a href="#" target="_blank">
                             <span class="mbr-iconfont mbr-iconfont-social socicon-discord socicon"
                                   style="color: rgb(252, 0, 255); fill: rgb(252, 0, 255);"></span>
                         </a>
                     </div>
                     <div class="soc-item">
-                        <a href="https://twitter.com/trollzspaceclub">
+                        <a href="#">
                             <span class="mbr-iconfont mbr-iconfont-social socicon-twitter socicon"
                                   style="color: rgb(252, 0, 255); fill: rgb(252, 0, 255);"></span>
                         </a>
                     </div>
                     <div class="soc-item">
-                        <a href="https://www.instagram.com/trollzspaceclub/">
+                        <a href="#">
                             <span class="mbr-iconfont mbr-iconfont-social socicon-instagram socicon"
                                   style="color: rgb(252, 0, 255); fill: rgb(252, 0, 255);"></span>
                         </a>
@@ -594,7 +692,7 @@
             </div>
             <div class="row row-copirayt">
                 <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">©CREATED BY
-                    CLU PRODUCTION HOUSE
+                    LOST PANDA
                 </p>
             </div>
         </div>
