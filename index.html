@@ -21,175 +21,187 @@
     <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css">
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<style>
-    @font-face {
-        font-family: TESLA;
-        src: url(assets/fonts/TESLA/Kidsco.otf);
-    }
-    * {
-        font-family: TESLA !important;
-    }
+    <style>
+        @font-face {
+            font-family: TESLA;
+            src: url(assets/fonts/TESLA/DR.otf);
+        }
 
-    .caption {
-        font-size: 10px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 13px;
-        letter-spacing: 0.04em;
-        text-align: left;
-        text-transform: uppercase;
-        color: var(--secondary);
-    }
+        * {
+            font-family: TESLA !important;
+        }
 
-    .title {
-        font-size: 24px;
-        font-style: normal;
-        font-weight: bold;
-        line-height: 31px;
-        letter-spacing: 0em;
-        text-align: center;
-        margin-bottom: 8px;
-        color: var(--secondary);
-    }
+        .caption {
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 13px;
+            letter-spacing: 0.04em;
+            text-align: left;
+            text-transform: uppercase;
+            color: var(--secondary);
+        }
 
-    .faq {
-        max-width: 800px;
-        margin: auto;
-    }
+        .title {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: 31px;
+            letter-spacing: 0em;
+            text-align: center;
+            margin-bottom: 8px;
+            color: var(--secondary);
+        }
 
-    .box-content-colapse {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
+        .faq {
+            max-width: 800px;
+            margin: auto;
+        }
 
-    .intro-colapse {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+        .box-content-colapse {
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
 
-    .details-comp {
-        cursor: pointer;
-        width: calc(100% - 32px);
-        padding: 16px;
-        border-radius: 8px;
-        margin-bottom: 32px;
-        position: relative;
-        left: 0px;
-        background: #ffa904;
-        filter: drop-shadow(7px 9px 5px rgba(0, 0, 0, 0.04));
-        -webkit-filter: drop-shadow(7px 9px 5px rgba(0, 0, 0, 0.04));
-        -moz-filter: drop-shadow(7px 9px 5px rgba(0, 0, 0, 0.04));
-    }
+        .intro-colapse {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .details-comp > p {
-        padding: 0 16px;
-    }
+        .details-comp {
+            cursor: pointer;
+            width: calc(100% - 32px);
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 32px;
+            position: relative;
+            left: 0px;
+            background: #ffa904;
+            filter: drop-shadow(7px 9px 5px rgba(0, 0, 0, 0.04));
+            -webkit-filter: drop-shadow(7px 9px 5px rgba(0, 0, 0, 0.04));
+            -moz-filter: drop-shadow(7px 9px 5px rgba(0, 0, 0, 0.04));
+        }
 
-    .summary-colapse {
-        list-style: none;
-        border-radius: 8px;
-        padding-left: 16px;
-        color: var(--ternary);
-        font-weight: bold;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
+        .details-comp > p {
+            padding: 0 16px;
+            font-size: 20px;
+            color: #1a40fc;
+        }
 
-    .summary-colapse::-webkit-details-marker {
-        display: none;
-    }
+        .summary-colapse {
+            list-style: none;
+            border-radius: 8px;
+            padding-left: 16px;
+            color: var(--ternary);
+            font-weight: bold;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            font-size: 25px;
+            letter-spacing: 3px;
+        }
 
-    .details-comp[open] > .summary-colapse::after {
-        display: flex;
-        justify-content: space-between;
-        content: url("https://cdn-icons-png.flaticon.com/24/7153/7153564.png");
-        font-size: 16px;
-        align-items: center;
-        padding-right: 24px;
-    }
+        .summary-colapse::-webkit-details-marker {
+            display: none;
+        }
 
-    .details-comp > .summary-colapse::after {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        content: url("https://cdn-icons-png.flaticon.com/24/7153/7153566.png");
-        font-size: 16px;
-        padding-right: 24px;
-    }
+        .details-comp[open] > .summary-colapse::after {
+            display: flex;
+            justify-content: space-between;
+            content: url("https://cdn-icons-png.flaticon.com/24/7153/7153564.png");
+            font-size: 16px;
+            align-items: center;
+            padding-right: 24px;
+        }
 
-    .details-comp[open] p {
-        animation: details-show 350ms linear;
-    }
+        .details-comp > .summary-colapse::after {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            content: url("https://cdn-icons-png.flaticon.com/24/7153/7153566.png");
+            font-size: 16px;
+            padding-right: 24px;
+        }
 
-    .details-comp:not([open]) p {
-        opacity: 0;
-    }
+        .details-comp[open] p {
+            animation: details-show 350ms linear;
+        }
 
-    @keyframes details-show {
-        0% {
+        .details-comp:not([open]) p {
             opacity: 0;
-            transform: translatey(-25px);
         }
-        100% {
-            opacity: 1;
-            transform: translatey(0);
-        }
-    }
-    section#Charity {
-        padding: 6rem 0;
-        background-color: #fdd302;
-    }
 
-    #background{
-        max-width: 70%;
-        background: #ffa800;
-        padding: 20px;
-    }
-
-    @media screen and (max-width: 480px) {
-        #background{
-            max-width: 100%;
+        @keyframes details-show {
+            0% {
+                opacity: 0;
+                transform: translatey(-25px);
+            }
+            100% {
+                opacity: 1;
+                transform: translatey(0);
+            }
         }
-    }
-    .section-title {
-        text-align: center;
-        padding-bottom: 3rem;
-    }
-    .counter {
-        display: flex;
-        justify-content: center;
-    }
-    .counter li {
-        list-style: none;
-        width: 6rem;
-        background: #fff;
-        margin: 0 0.5rem;
-        padding: 1rem 0;
-        border: 1px solid #d0d6d7;
-        text-align: center;
-        font-size: 2.8rem;
-        font-weight: 700;
-        border-radius: 1rem;
-    }
-    .charity-price {
-        text-align: center;
-        padding: 3rem 0;
-    }
-    .charity-buttons {
-        text-align: center;
-    }
-    .charity-buttons {
-        text-align: center;
-    }
-</style>
+
+        section#Charity {
+            padding: 6rem 0;
+            background-color: #ffffd3;
+        }
+
+        #background {
+            max-width: 70%;
+            background: #c6fad6;
+            padding: 20px;
+        }
+
+        @media screen and (max-width: 480px) {
+            #background {
+                max-width: 100%;
+            }
+        }
+
+        .section-title {
+            text-align: center;
+            padding-bottom: 3rem;
+        }
+
+        .counter {
+            display: flex;
+            justify-content: center;
+        }
+
+        .counter li {
+            list-style: none;
+            width: 6rem;
+            background: #fff;
+            margin: 0 0.5rem;
+            padding: 1rem 0;
+            border: 1px solid #d0d6d7;
+            text-align: center;
+            font-size: 2.8rem;
+            font-weight: 700;
+            border-radius: 1rem;
+        }
+
+        .charity-price {
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .charity-buttons {
+            text-align: center;
+        }
+
+        .charity-buttons {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 
@@ -217,31 +229,26 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="icons-menu">
-                    <a class="iconfont-wrapper" href="https://discord.com/invite/TrollzSpaceClub" target="_blank">
+                    <a class="iconfont-wrapper" href="#" target="_blank">
                         <span class="p-2 mbr-iconfont socicon-discord socicon"></span>
                     </a>
-                    <a class="iconfont-wrapper" href="https://twitter.com/trollzspaceclub" target="_blank">
+                    <a class="iconfont-wrapper" href="#" target="_blank">
                         <span class="p-2 mbr-iconfont socicon-twitter socicon socicon-500px"></span>
                     </a>
-                    <a class="iconfont-wrapper" href="https://www.instagram.com/trollzspaceclub/" target="_blank">
+                    <a class="iconfont-wrapper" href="#" target="_blank">
                         <span class="p-2 mbr-iconfont socicon-instagram socicon"></span>
                     </a>
-                    <a class="iconfont-wrapper" href="https://www.youtube.com/channel/UC-L_Fu36ygKTSDXWsAyidGw"
+                    <a class="iconfont-wrapper" href="#"
                        target="_blank">
                         <span class="p-2 mbr-iconfont socicon-youtube socicon"></span>
                     </a>
                 </div>
-                <div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4" href="Glitch.html">CONNECT</a>
+                <div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4" href="#">CONNECT</a>
                 </div>
             </div>
         </div>
     </nav>
 </section>
-
-
-
-
-
 
 
 <section data-bs-version="5.1" class="countdown3 cid-sZdxKIDTOn mbr-fullscreen mbr-parallax-background"
@@ -250,15 +257,16 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8">
-                <h3 class="mbr-section-title mb-5 align-center mbr-fonts-style display-2"><strong>Lost Panda</strong><br/>
+                <h3 class="mbr-section-title mb-5 align-center mbr-fonts-style display-2"><strong>Lost
+                    Panda</strong><br/>
                     First Charity focused <span class="text-white">P2E GAME!</span></h3>
 
-                <div class="mbr-section-btn align-center mt-5"><a class="btn btn-primary display-4" href="#background">MINT</a></div>
+                <div class="mbr-section-btn align-center mt-5"><a class="btn btn-primary display-4" href="#background" style="width: 120px; font-size: 25px;">MINT</a>
+                </div>
             </div>
         </div>
     </div>
 </section>
-
 
 
 <section id="Charity">
@@ -276,32 +284,17 @@
             <li>+</li>
         </div>
         <div class="charity-price">
-            <h4 style="font-size: 30px"><span>Price: </span>0.5 ETH + Gas Fee</h4>
+            <h4 style="font-size: 30px"><span>Price: </span>0.03 ETH + Gas Fee</h4>
             <h4 style="font-size: 30px"><span>Minted:</span> 0 / 2383</h4>
             <h4 style="font-size: 30px">Max 5 Per Transaction</h4>
         </div>
-        <div class="charity-buttons">
-            <a href="#" style="font-size: 20px">Connect Wallet</a>
+        <div class="mbr-section-btn align-center mt-5"><a class="btn btn-primary display-4" href="#background">Connect Wallet</a>
         </div>
     </div>
 </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 <section data-bs-version="5.1" class="image2 cid-sNPIWuRegg" id="image2-l">
-
-
     <div class="container">
         <div class="row align-items-center">
             <div class="col-12 col-lg-4">
@@ -311,17 +304,63 @@
             </div>
             <div class="col-12 col-lg">
                 <div class="text-wrapper">
-                    <h3 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong><u style="font-size: 50px">Who we are!</u><br></strong><br></h3>
+                    <h3 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong><u style="font-size: 50px">Back Story
+                    </u><br></strong><br></h3>
                     <h5 class="mbr-text mbr-fonts-style display-5">
-                        LostPanda gives a chance to help donating without the donation coming directly from your
-                        pockets. How? Introducing the first Charity based P2E game where holders can choose to
-                        donate their earnings and the less fortunate to have a chance at earning a quick buck.
-
+                        The initiative started with blending Charities & P2E NFT games into the same pool. Following the recent devastating
+                        events in our artists home country Ukraine, the ever changing struggles & livelihood of pandas was an idea which
+                        initially started with just the donation aspect but slowly emerged into a P2E game as we want to provide value for our
+                        holders as well. Vision emerged from providing a helping hand and raising awareness globally to holders getting a
+                        chance to give back via the P2E game so anyone and everyone can give back to the less fortunate ones…
                     </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="image2 cid-sNPIWuRegg" style="background-color: #c6fad6;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg">
+                <div class="text-wrapper">
+                    <h3 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong><u style="font-size: 50px">Introduction
+                    </u><br></strong><br></h3>
                     <h5 class="mbr-text mbr-fonts-style display-5">
-                        Lost Panda is a collection of 2,388 adorable little  Panda residing on the Ethereum
-                        blockchain as a unique NFT made with Combination of remarkable traits soon to be shifted
-                        to their home in the metaverse where users can earn whilst having a choice of giving back.
+                        LostPanda gives a chance to help donating without the donation coming directly from your pockets. How? Introducing
+                        the first Charity based P2E game where holders can choose to donate their earnings and the less fortunate to have a
+                        chance at earning a quick buck. After giving away 25% of mint proceeds in order to directly make a difference we will
+                        offer a game experience that aims at making the world more diverse by players coming from all walks of life for the
+                        same vision ; Model is simple,”Help the less fortunate” which is a win for everybody. Holders / Players / Charities /
+                        Wildlife / Ukraine and the list goes on…
+                    </h5>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="image-wrapper">
+                    <img src="assets/images/rough-modified-1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="image2 cid-sNPIWuRegg" style="background-color: #ffffd3;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-4">
+                <div class="image-wrapper">
+                    <img src="assets/images/rough-modified-1.png" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-lg">
+                <div class="text-wrapper">
+                    <h3 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong><u style="font-size: 50px">What is Lost Panda?
+                    </u><br></strong><br></h3>
+                    <h5 class="mbr-text mbr-fonts-style display-5">
+                        Lost Panda is a collection of 2,388 adorable little Panda residing on the Ethereum blockchain as a unique NFT made
+                        with Combination of remarkable traits soon to be shifted to their home in the metaverse where users can earn whilst
+                        having a choice of giving back…
                     </h5>
                 </div>
             </div>
@@ -332,13 +371,19 @@
 <section data-bs-version="5.1" class="features21 cid-sZOFiu1PKR" id="features22-48">
 
 
-
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-md-8">
                 <div class="item mbr-flex">
                     <div class="icon-box w-100">
                         <span class="step-number mbr-fonts-style display-1"><u>Roadmap</u></span>
+                        <h2 style="font-size: 25px;margin-top: 20px;">Some parts of the roadmap are being
+                            worked on for the last two months for e.g
+                            Lost Panda Game Prototype / Demo
+                            We believe in underpromsing &
+                            overdelivering so brace yourself if the
+                            roadmap unfolds earlier….
+                        </h2>
                     </div>
 
                 </div>
@@ -348,8 +393,6 @@
 </section>
 
 <section data-bs-version="5.1" class="timeline2 cid-sZwLI4QbJZ" id="timeline2-35">
-
-
 
 
     <div class="container">
@@ -364,13 +407,12 @@
                 <span class="iconBackground"></span>
                 <div class="col-12 col-md-8">
                     <div class="timeline-text-content">
-                        <h4 class="mbr-timeline-title mb-4 mbr-fonts-style display-1"><strong>GIVE BACK TO THE COMMUNITY</strong></h4>
-
+                        <h4 class="mbr-timeline-title mb-4 mbr-fonts-style display-1"><strong>Completion of Phase 1</strong></h4>
                         <p class="mbr-text mbr-fonts-style display-5">
-                            * Giveaways & Airdrops to our holders<br/>
                             * Introduce Lost Panda P2E Game<br/>
-                            * Merch drop for holders & Supporters<br/>
-                            * We will buy land in sandbox for our lost panda to finally reside at a home in the metaverse
+                            * Introduce $bamboo Token ( earned whilst
+                            playing Lost Panda )<br/>
+                            * Giveaways & Airdrops to our holders<br/>
                         </p>
                     </div>
                 </div>
@@ -384,13 +426,18 @@
                 <span class="iconBackground"></span>
                 <div class="col-12 col-md-8">
                     <div class="timeline-text-content">
-                        <h4 class="mbr-timeline-title mb-4 mbr-fonts-style display-1"><strong>INCREASE AREA OF REACH</strong></h4>
+                        <h4 class="mbr-timeline-title mb-4 mbr-fonts-style display-1"><strong>Increase Area of Reach
+                        </strong></h4>
 
                         <p class="mbr-text mbr-fonts-style display-5">
-                            * Collab with other P2E NFT project ( top secret )<br/>
-                            * Introduce Lost Panda P2E Game<br/>
-                            * Introduce $bamboo Token ( earned whilst playing Lost Panda )<br/>
-                            * Get lost panda on billboards in NYC, London & Hong Kong
+                            * Collab with other P2E NFT project ( top secret )
+                            <br/>
+                            * Get lost panda on billboards in NYC, London &
+                            Asia
+                            <br/>
+                            * Merch drop for holders & Supporters<br/>
+                            * We will buy land in sandbox for our lost panda
+                            to finally reside at a home in the metaverse
                         </p>
                     </div>
                 </div>
@@ -404,13 +451,16 @@
                 <span class="iconBackground"></span>
                 <div class="col-12 col-md-8">
                     <div class="timeline-text-content">
-                        <h4 class="mbr-timeline-title mb-4 mbr-fonts-style display-1"><strong>LOST PANDA FULFILS ITS DUTIES</strong></h4>
-
+                        <h4 class="mbr-timeline-title mb-4 mbr-fonts-style display-1"><strong> Lost Panda fulfils its duties</strong></h4>
                         <p class="mbr-text mbr-fonts-style display-5">
-                            * Donate 25% of mint proceedings to charity in collaboration with Ukraine<br/>
-                            * Donate 15% to Global Wildlife Preserves<br/>
-                            * Unique NFT holders will be sent a plush toy Panda as token of donation<br/>
-                            * Sneak Peak of our Lost Panda P2E game prototype
+                            * Donate 15% of mint proceedings to charity in
+                            collaboration with Ukraine
+                            <br/>
+                            * Donate 10% to Global Wildlife Preserves<br/>
+                            * Unique NFT holders will be sent a plush toy
+                            Panda as token of donation
+                            <br/>
+                            * Second SneakPeak of Lost Panda
                         </p>
                     </div>
                 </div>
@@ -424,12 +474,18 @@
                 <span class="iconBackground"></span>
                 <div class="col-12 col-md-8">
                     <div class="timeline-text-content">
-                        <h4 class="mbr-timeline-title mb-4 mbr-fonts-style display-1"><strong>LOST PANDA FINDS ITS HOME ( MINT PHASE )</strong></h4>
+                        <h4 class="mbr-timeline-title mb-4 mbr-fonts-style display-1"><strong>Lost Panda Finds its Home ( Mint
+                            Phase )</strong></h4>
 
                         <p class="mbr-text mbr-fonts-style display-5">
-                            * 2,388 Lost Panda will be minted by our community<br/>
-                            * Lost Panda goes live on secondary market (opensea)<br/>
-                            Lost Panda will be launched on Rarity.Tools Post mint
+                            * -2,388 Lost Panda will be minted by our
+                            community
+                            <br/>
+                            * Lost Panda goes live on secondary market
+                            (opensea)<br/>
+                            * Lost Panda will be launched on Rarity.Tools
+                            Post mint
+
                         </p>
                     </div>
                 </div>
@@ -443,19 +499,20 @@
                 <span class="iconBackground"></span>
                 <div class="col-12 col-md-8">
                     <div class="timeline-text-content">
-                        <h4 class="mbr-timeline-title mb-4 mbr-fonts-style display-1"><strong>LOST PANDA’S LAUNCH</strong><br><br></h4>
+                        <h4 class="mbr-timeline-title mb-4 mbr-fonts-style display-1"><strong>LOST PANDA’S
+                            LAUNCH</strong><br><br></h4>
 
                         <p class="mbr-text mbr-fonts-style display-5">
-                            * Launch of Lost Panda on All Socials & Official Website Launch<br/>
-                            * Whitelist spot giveaways<br/>
-                            * Portion of the collection will be held for promotion / Giveaway
+                            * Launch of Lost Panda on All Socials & Official
+                            Website Launch
+                            <br/>
+                            * Whitelist spot giveaways
+                            <br/>
+                            * First Sneak Peak Of Lost Panda Game
                         </p>
                     </div>
                 </div>
             </div>
-
-
-
 
 
         </div>
@@ -477,7 +534,7 @@
                     </div>
                     <div class="content-wrap">
                         <h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-5">
-                            <strong><a href="#" class="text-secondary" target="_blank">Blockchain expert</a></strong>
+                            <strong><a href="#" class="text-secondary" target="_blank">Blockchain Expert + “Founder”</a></strong>
                         </h5>
                         <h6 class="mbr-role mbr-fonts-style align-center mb-3 display-4 text-white">
                             <strong>Expert in blockchain technology with past experiences working for
@@ -517,7 +574,7 @@
                     </div>
                     <div class="content-wrap">
                         <h5 class="mbr-section-title card-title mbr-fonts-style align-center m-0 display-5">
-                            <strong><a href="https://twitter.com/ShroomerOG" class="text-secondary" target="_blank">Wildlife artist</a></strong>
+                            <strong><a href="https://twitter.com/ShroomerOG" class="text-secondary" target="_blank">Wildlife Artist + “Founder”</a></strong>
                         </h5>
                         <h6 class="mbr-role mbr-fonts-style align-center mb-3 display-4 text-white">
                             <strong>From Ukraine with a burning desire to make a change for the better
@@ -609,7 +666,7 @@
 
             <details class="details-comp">
                 <summary class="summary-colapse">
-                    When Will it be released??
+                    When Will it be released?
                 </summary>
                 <p>
                     Date is TBA. Please regularly check announcements on Discord or Twitter
@@ -620,7 +677,7 @@
                     What is the Pre-Sale & Public mint price?
                 </summary>
                 <p>
-                    Pre-Sale : 0.03 Public Sale : 0.05
+                    Pre-Sale : 0.04 Public Sale : 0.06
                 </p>
             </details>
             <details class="details-comp">
@@ -633,7 +690,7 @@
             </details>
             <details class="details-comp">
                 <summary class="summary-colapse">
-                    How do I mint Lost Panda?
+                    How do I mint Lost Panda
                 </summary>
                 <p>
                     Step-by-step guide is posted on discord under #howtomint section
@@ -644,15 +701,15 @@
                     Will there be a whitelist?
                 </summary>
                 <p>
-                    Yes portion of the collection will be available for whitelist.
+                    Yes portion of the collection will be available for whitelist
                 </p>
             </details>
             <details class="details-comp">
                 <summary class="summary-colapse">
-                    Why are royalties 10%?
+                    Why are royalties 10%
                 </summary>
                 <p>
-                    We keep 10% for game development & maintenance purposes.
+                    We keep 10% for game development & maintenance purposes
                 </p>
             </details>
 
